@@ -1,9 +1,117 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 OPR/124.0.0.0" version="29.2.7">
   <diagram name="Strona-1" id="ki5j7TpIpRw3vVy83qhy">
-    <mxGraphModel>
+    <mxGraphModel dx="2598" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-2" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" value="PI 5" vertex="1">
+          <mxGeometry height="340" width="580" x="170" y="90" as="geometry">
+            <mxRectangle height="40" width="60" x="260" y="130" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-3" parent="dM55x2NpAG2Y-fg5ziaj-2" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" value="PORTAINER" vertex="1">
+          <mxGeometry height="240" width="540" x="20" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-4" parent="dM55x2NpAG2Y-fg5ziaj-3" style="rounded=0;whiteSpace=wrap;html=1;" value="MQTT SERVER (DOCKER)" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-5" parent="dM55x2NpAG2Y-fg5ziaj-3" style="rounded=0;whiteSpace=wrap;html=1;" value="ROBOT CONTROL (DOCKER)" vertex="1">
+          <mxGeometry height="60" width="120" x="223.5" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-49" edge="1" parent="dM55x2NpAG2Y-fg5ziaj-3" source="dM55x2NpAG2Y-fg5ziaj-4" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="dM55x2NpAG2Y-fg5ziaj-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="160" y="140" as="sourcePoint" />
+            <mxPoint x="200" y="119.41" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-10" parent="dM55x2NpAG2Y-fg5ziaj-3" style="rounded=0;whiteSpace=wrap;html=1;" value="IO DEVICES" vertex="1">
+          <mxGeometry height="60" width="120" x="410" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-48" edge="1" parent="dM55x2NpAG2Y-fg5ziaj-3" source="dM55x2NpAG2Y-fg5ziaj-5" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="dM55x2NpAG2Y-fg5ziaj-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="370" y="170" as="sourcePoint" />
+            <mxPoint x="420" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-29" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" value="ESP C3 CAM" vertex="1">
+          <mxGeometry height="240" width="540" x="-530" y="90" as="geometry">
+            <mxRectangle height="40" width="110" x="-530" y="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-31" parent="dM55x2NpAG2Y-fg5ziaj-29" style="rounded=0;whiteSpace=wrap;html=1;" value="MQTT CLIENT" vertex="1">
+          <mxGeometry height="60" width="120" x="390" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-44" edge="1" parent="dM55x2NpAG2Y-fg5ziaj-29" source="dM55x2NpAG2Y-fg5ziaj-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="dM55x2NpAG2Y-fg5ziaj-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-41" parent="dM55x2NpAG2Y-fg5ziaj-29" style="rounded=0;whiteSpace=wrap;html=1;" value="CAMERA" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-43" parent="dM55x2NpAG2Y-fg5ziaj-29" style="rounded=0;whiteSpace=wrap;html=1;" value="OBJECT DETECTION" vertex="1">
+          <mxGeometry height="60" width="120" x="210" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-50" edge="1" parent="dM55x2NpAG2Y-fg5ziaj-29" source="dM55x2NpAG2Y-fg5ziaj-43" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="dM55x2NpAG2Y-fg5ziaj-31" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="210" as="sourcePoint" />
+            <mxPoint x="380" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-34" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" value="ESP C3 CONTROL" vertex="1">
+          <mxGeometry height="470" width="550" x="-540" y="450" as="geometry">
+            <mxRectangle height="40" width="430" x="-510" y="480" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-36" parent="dM55x2NpAG2Y-fg5ziaj-34" style="rounded=0;whiteSpace=wrap;html=1;" value="MQTT CLIENT" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-54" parent="dM55x2NpAG2Y-fg5ziaj-34" style="rounded=0;whiteSpace=wrap;html=1;" value="ACCELEROMETER&lt;div&gt;GYRO&lt;/div&gt;&lt;div&gt;MAGNETOMETER&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="60" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-56" parent="dM55x2NpAG2Y-fg5ziaj-34" style="rounded=0;whiteSpace=wrap;html=1;" value="POSITION" vertex="1">
+          <mxGeometry height="60" width="120" x="60" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-58" edge="1" parent="dM55x2NpAG2Y-fg5ziaj-34" source="dM55x2NpAG2Y-fg5ziaj-54" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="dM55x2NpAG2Y-fg5ziaj-36" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="250" y="140" as="sourcePoint" />
+            <mxPoint x="300" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-59" edge="1" parent="dM55x2NpAG2Y-fg5ziaj-34" source="dM55x2NpAG2Y-fg5ziaj-56" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="dM55x2NpAG2Y-fg5ziaj-36" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="360" y="160" as="sourcePoint" />
+            <mxPoint x="580" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-61" parent="dM55x2NpAG2Y-fg5ziaj-34" style="rounded=0;whiteSpace=wrap;html=1;" value="BATTERY V" vertex="1">
+          <mxGeometry height="60" width="120" x="60" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-62" edge="1" parent="dM55x2NpAG2Y-fg5ziaj-34" source="dM55x2NpAG2Y-fg5ziaj-61" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="dM55x2NpAG2Y-fg5ziaj-36" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="270" y="210" as="sourcePoint" />
+            <mxPoint x="490" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-63" parent="dM55x2NpAG2Y-fg5ziaj-34" style="rounded=0;whiteSpace=wrap;html=1;" value="SERVOS" vertex="1">
+          <mxGeometry height="60" width="120" x="60" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-64" edge="1" parent="dM55x2NpAG2Y-fg5ziaj-34" source="dM55x2NpAG2Y-fg5ziaj-36" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="dM55x2NpAG2Y-fg5ziaj-63" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="320" as="sourcePoint" />
+            <mxPoint x="400" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-47" edge="1" parent="1" source="dM55x2NpAG2Y-fg5ziaj-31" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="dM55x2NpAG2Y-fg5ziaj-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="60" y="400" as="sourcePoint" />
+            <mxPoint x="110" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dM55x2NpAG2Y-fg5ziaj-51" edge="1" parent="1" source="dM55x2NpAG2Y-fg5ziaj-36" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="dM55x2NpAG2Y-fg5ziaj-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-130" y="360" as="sourcePoint" />
+            <mxPoint x="90" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
